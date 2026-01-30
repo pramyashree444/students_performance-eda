@@ -1,0 +1,32 @@
+
+Students Performance Dataset - EDA Findings
+-------------------------------------------
+
+1. Dataset Overview:
+   - Number of rows: 1000
+   - Number of columns: 8
+   - Columns: gender, race/ethnicity, parental level of education, lunch, test preparation course, math score, reading score, writing score
+
+2. Data Types:
+   - Numerical columns: math score, reading score, writing score
+   - Categorical columns: gender, race/ethnicity, parental level of education, lunch, test preparation course
+
+3. Missing Values:
+   - No missing values found
+
+4. Descriptive Statistics:
+   - Math Score: min=0, max=100, mean=70
+   - Reading Score: min=17, max=100, mean=72
+   - Writing Score: min=10, max=100, mean=70
+
+5. Outlier Analysis:
+   - Outliers detected in math score, reading score, writing score using IQR
+   - Created flag columns: math_score_outlier, reading_score_outlier, writing_score_outlier
+   - Outliers handled using capping
+
+6. Correlation Analysis:
+   - Strong correlation between math, reading, and writing scores
+   - Other features show low correlation
+
+7. Conclusion:
+   - Dataset is clean and ready for further analysis
